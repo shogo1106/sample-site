@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+
+
+
+/*===============================
+    共通のボタン
+================================*/
+.btn{
+  width: 240px;
+  height: 56px;
+  background: #33CCFF	;
+  color: #fff;
+  display: block;
+  display: inline-block;
+  text-align: center;
+  line-height: 56px;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background: #000;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 991px){
+  .concept_btn{
+    width: 300px;
+  }
+}
+
+/*===============================
+    共通のタイトル
+================================*/
+.section_ttl{
+  padding-top: 70px;
+  font-size: 29px;
+  text-align: center;
+  font-weight: bold;  
+  letter-spacing: .1em;
+}
+
+.section_ttl span{
+font-size: 14px;
+color: #00CCFF;
+display: block;
+margin-top: 14px;
+}
+
+.pattern_ttl_bottom{
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 44px;
+  margin-bottom: 40px;
+  letter-spacing: .19em;
+}
+
+/*===============================
+    inner要素
+================================*/
+
+.inner{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+/*------------------------------------ 
+header
+------------------------------------*/
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important;  }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 991px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+}
+
+/*------------------------------------ 
+footer
+------------------------------------*/
+@media screen and (max-width: 991px){
+
+  footer{
+    display: none;
+  }
+}
